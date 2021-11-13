@@ -8,23 +8,23 @@ app.get("/", (req, res) => {
   res.sendFile(pathToFile);
 })
 
+app.get("/africa", (req, res) => {
+  const pathToFile = filePath("/pages/africa.html");
+  res.sendFile(pathToFile);
+});
+
 app.get("/asia", (req, res) => {
   const pathToFile = filePath("/pages/asia.html");
   res.sendFile(pathToFile);
 });
 
-app.get("/europe", (req, res) => {
-  const pathToFile = filePath("/pages/europe.html");
-  res.sendFile(pathToFile);
-});
-
 app.get("/oceania", (req, res) => {
-  const pathToFile = filePath("/pages/oceania.html");
+  const pathToFile = filePath("/pages/south-america.html");
   res.sendFile(pathToFile);
 });
 
 app.get("/south-america", (req, res) => {
-  const pathToFile = filePath("/pages/south-america.html");
+  const pathToFile = filePath("/pages/index.html");
   res.sendFile(pathToFile);
 });
 
