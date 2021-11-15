@@ -6,7 +6,7 @@ const app = express();
 app.get("/", (req, res) => {
   const pathToFile = filePath("/pages/index.html");
   res.sendFile(pathToFile);
-})
+});
 
 app.get("/africa", (req, res) => {
   const pathToFile = filePath("/pages/africa.html");
