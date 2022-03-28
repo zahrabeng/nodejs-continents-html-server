@@ -18,6 +18,11 @@ app.get("/asia", (req, res) => {
   res.sendFile(pathToFile);
 });
 
+app.get("/antarctica", (req, res) => {
+  const pathToFile = filePath("/pages/antarctica.html");
+  res.sendFile(pathToFile);
+});
+
 app.get("/oceania", (req, res) => {
   const pathToFile = filePath("/pages/south-america.html");
   res.sendFile(pathToFile);
